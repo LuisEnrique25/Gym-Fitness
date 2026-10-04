@@ -1,110 +1,139 @@
-.logo-img{
-    width: 50px;
-    height: 50px;
-}
+/* NAVBAR Y CONTAINER*/
 
-nav{
-    background-color: #000;
-    padding: 1rem 2rem;
+.navbar {
+    width: 100%;
+    background: rgba(11, 29, 18, 0.85);
+    backdrop-filter: blur(14px);
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-.nav-container{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.nav-container {
+    width: 100%;
     max-width: 1200px;
     margin: 0 auto;
+    padding: 1rem;
 }
 
-.logo{
-    color: #fff;
-    font-weight: bold;
-    font-size: 1.5rem;
-    text-decoration: none;
-}
 
-.nav-links{
+/* =========================
+   PARTE SUPERIOR
+   Logo + botón
+========================= */
+
+.nav-top {
     display: flex;
-    gap: 2rem;
-    list-style: none;
-    transition: all 0.3s ease;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.nav-links a{
-    color: #fff;
+.logo {
+    color: var(--green);
     text-decoration: none;
-    font-weight: 500;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.logo span{
+    color: var(--muted)
+}
+
+
+/*   BOTÓN MENU */
+
+.menu-btn {
+    background: none;
+    border: none;
+    color: var(--muted);
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.menu-btn:hover{
+    color: var(--text);
+    transform: scale(1.15);
+}
+
+
+/*  MENU  */
+
+.nav-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 1.2rem;
+
+  /* Estado cerrado */
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: max-height 0.4s ease,
+        opacity 0.3s ease,
+        transform 0.4s ease;
+}
+
+
+/*  MENU ABIERTO  */
+
+.nav-links.show {
+    max-height: 200px;
+    opacity: 1;
+    transform: translateY(0);
+    padding: 1rem 0 0.5rem 0;
+}
+
+
+.nav-links a {
+    color: var(--muted);
+    text-decoration: none;
     transition: all 0.3s ease;
 }
 
 .nav-links a:hover{
-    opacity: 0.8;
-    transform: translateY(-2px);
+    color: var(--text);
 }
 
-.menu-btn{
-    display: none;
-    background: none;
-    border: none;
-    color: #fff;
-    font-size: 1.5rem;
-    cursor: pointer;
-}
 
-/* ------ responsive -----------*/
+/*    DESKTOP    */
 
-@media (max-width: 768px) {
-    .menu-btn{
-        display: block;
-    }
+@media (min-width: 768px) {
 
-    .nav-links{
-        position: fixed;
-        top: 60px;
-        left: 0;
-        width: 100%;
-        background-color: #000;
-        flex-direction: column;
+    .nav-container {
+        display: flex;
         align-items: center;
-        padding: 1rem 0;
-        clip-path: circle(0px at 90% -10%);
-        pointer-events: none;
+        justify-content: space-between;
     }
 
-    .nav-links.active{
-        clip-path: circle(1000px at 90% -10%);
-        pointer-events: all;
+  /* Ocultamos botón hamburguesa */
+    .menu-btn {
+        display: none;
     }
 
-    .nav-links li{
-        opacity: 0;
-        transform: translateY(20px);
-        transition: all 0.3s ease;
-    }
-
-    .nav-links.active li{
+  /* Menú siempre visible */
+    .nav-links {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        font-size: 1.3rem;
+        gap: 2rem;
+        max-height: none;
         opacity: 1;
-        transform: translateY(0);
-    }
+        transform: none;
+        overflow: visible;
+        padding: 0;
+    
+  }
 
-    .nav-links li:nth-child(1){
-        transition-delay: 0.1s;
-    }
 
-    .nav-links li:nth-child(2){
-        transition-delay: 0.2s;
-    }
-
-    .nav-links li:nth-child(3){
-        transition-delay: 0.3s;
-    }
-
-    .nav-links li:nth-child(4){
-        transition-delay: 0.4s;
-    }
-
-    .nav-links li:nth-child(5){
-        transition-delay: 0.5s;
+    .nav-links.show {
+        max-height: none;
+        padding: 0;
     }
 }
