@@ -1,48 +1,38 @@
 
+import { useState } from 'react'
 import './navbar.css'
 
 function Navbar() {
-  
-  const menuBtn = document.getElementById('menuBtn');
-  const navLinks = document.getElementById('navLinks');
-  const links = navLinks.querySelectorAll('a');
 
-  menuBtn.addEventListener('click', () => {
-    navLinks.classList.toggle("active");
-    if(navLinks.classList.contains("active")){
-      menuBtn.innerHTML = 'X';
-      menuBtn.setAttribute("aria-expanded", "true")
-    }else{
-      menuBtn.innerHTML = "M";
-      menuBtn.setAttribute("aria-expanded", "false")
-    }
-  });
-
-  links.forEach(link => {
-    link.addEventListener("click", () =>{
-      navLinks.classList.remove("active");
-      menuBtn.innerHTML = "M"
-      menuBtn.setAttribute("aria-expanded", "false");
-    })
-  })
+  const [isShowMenu, setIsShowMenu] = useState(true);
+  const toggleMenu = () => {
+    setIsShowMenu(!isShowMenu);
+    console.log("render:", isShowMenu);
+  }
 
   return (
-    <header className="navbar">
-      <nav>
+    <header>
+      <nav className='navbar'>
         <div className="nav-container">
-          <a href="#" className="logo"><img src="public\imgs\gymLogo2.png" alt="logo" className='logo-img' />Gym&Fitness</a>
-          <button className='menu-btn' id='menuBtn'><i className="fa-solid fa-bars"></i></button> 
-          <ul className="nav-links" id='navLinks'>
-            <li><a href="#home" >Home</a></li>
-            <li><a href="#programs">Programs</a></li>
-            <li><a href="#about">About Us</a></li>
-            <li><a href="#pricing">Plans</a></li>
-            <li><a href="#contact">Contact</a></li>
+          <div className="nav-top">
+
+          <a href="#" className="logo">Gym<span>&</span>Fitness</a>
+        
+          <button id="menuBtn" className="menu-btn" onClick={toggleMenu}>
+          {isShowMenu ? <i className="fa-solid fa-xmark"></i> : <i className="fa-solid fa-bars"></i>}
+          </button>
+          </div>
+
+          <ul className={`nav-links ${isShowMenu ? 'show' : ''}`} id='navLinks'>
+          <li><a href="#home" >Home</a></li>
+          <li><a href="#programs">Programs</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#pricing">Plans</a></li>
+          <li><a href="#contact">Contact</a></li>
           </ul>
-        </div>
-      </nav>
-    </header>
-  )
-}
+      </div>
+    </nav>
+  </header>
+)};
 
 export default Navbar
