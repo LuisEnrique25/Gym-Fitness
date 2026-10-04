@@ -1,3 +1,17 @@
+:root{
+    --bg: #0a1a10;
+    --bg2: #0d1f14;
+    --card: #112318;
+    --card2: #0f1e14;
+    --green: #1db954;
+    --green2: #25d966;
+    --teal: #2ec4a0;
+    --text: #e8f5eb;
+    --muted: #8aab90;
+    --border: #1e3a24;
+    --white: #ffffff;
+
+}
 *{
     margin: 0;
     padding: 0;
@@ -6,4 +20,26 @@
 
 html{
     scroll-behavior: smooth;
+}
+
+body{
+    background-color: var(--bg);
+    color: var(--text);
+}
+
+section{
+    padding: 2rem 1rem;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--bg);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--green);
+    border-radius: 3px;
 }
