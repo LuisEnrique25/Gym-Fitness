@@ -27,9 +27,7 @@ body{
     color: var(--text);
 }
 
-section{
-    padding: 2rem 1rem;
-}
+
 
 ::-webkit-scrollbar {
     width: 6px;
