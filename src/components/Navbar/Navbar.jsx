@@ -4,7 +4,7 @@ import './navbar.css'
 
 function Navbar() {
 
-  const [isShowMenu, setIsShowMenu] = useState(true);
+  const [isShowMenu, setIsShowMenu] = useState(false);
   const toggleMenu = () => {
     setIsShowMenu(!isShowMenu);
     console.log("render:", isShowMenu);
