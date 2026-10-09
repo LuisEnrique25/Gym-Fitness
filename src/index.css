@@ -10,33 +10,25 @@
     --muted: #8aab90;
     --border: #1e3a24;
     --white: #ffffff;
-
 }
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
 html{
     scroll-behavior: smooth;
 }
-
 body{
     background-color: var(--bg);
     color: var(--text);
 }
-
-
-
 ::-webkit-scrollbar {
     width: 6px;
 }
-
 ::-webkit-scrollbar-track {
     background: var(--bg);
 }
-
 ::-webkit-scrollbar-thumb {
     background: var(--green);
     border-radius: 3px;
