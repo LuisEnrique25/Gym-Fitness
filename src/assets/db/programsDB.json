@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "title": "Musculación",
+    "description": "Desarrolla fuerza y aumenta tu masa muscular.",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoD9At0DZSj39TAYuN4GwjDisD0TaDn1cfb-UkNjO19GzHIPGUQ2BQMIY&s=10"
+  },
+  {
+    "id": 2,
+    "title": "Cardio",
+    "description": "Mejora tu resistencia y condición física.",
+    "img": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmarathonhandbook.com%2Fwp-content%2Fuploads%2FCardio-Or-Strength-First.jpg&f=1&nofb=1&ipt=8232ba5a2a746c54e1264df3c6a602c08a10f90a095f9159b3680e1130ef2c22&ipo=images"
+  },
+  {
+    "id": 3,
+    "title": "Cross Training",
+    "description": "Supera tus límites con entrenamientos variados.",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkvGG1O_HviedViuRNuUBrvC7sOqg1trhxFSyGH8whKkX65EEr1SCnyPbi&s=10"
+  },
+  {
+    "id": 4,
+    "title": "Yoga",
+    "description": "Encuentra el equilibrio entre cuerpo y mente.",
+    "img": "https://hips.hearstapps.com/hmg-prod/images/female-instructor-with-yoga-class-in-the-gym-royalty-free-image-700718696-1561407106.jpg?crop=0.88847xw:1xh;center,top&resize=1200:*"
+  },
+  {
+    "id": 5,
+    "title": "Entrenamiento Personal",
+    "description": "Alcanza tus objetivos con atención personalizada.",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXhaFMLtk9PpY4SQrdCXgvx96xAHgLIyzGqCzKxS1oppnEdzTTdEtAL4e9&s=10"
+  }
+]
