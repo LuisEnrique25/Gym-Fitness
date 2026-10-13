@@ -47,7 +47,7 @@ function Hero() {
           <defs>
             <path id="circle" d="M 40,40 m -27,0 a 27,27 0 1,1 54,0 a 27,27 0 1,1 -54,0" />
           </defs>
-          <text fill="#8aab90" font-size="9" letter-spacing="2.8">
+          <text fill="#8aab90" fontSize="9" letterSpacing="2.8">
             <textPath href="#circle">DESLIZA HACIA ABAJO</textPath>
           </text>
         </svg>
