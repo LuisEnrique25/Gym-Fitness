@@ -1,7 +1,7 @@
 .section-hero {
     position: relative;
+    height: 100vh;
     min-height: 600px;
-    height: auto;
     box-sizing: border-box;
     display: grid;
     grid-template-columns: 1fr;
