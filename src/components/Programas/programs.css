@@ -1,0 +1,34 @@
+.section-programs{
+    max-width: 100vw;
+    overflow: hidden;
+    margin-top: 25px;
+    margin-bottom: 500px;
+}
+.programs-header{
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.section-label{
+    color: var(--green);
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+
+}
+.section-tittle{
+    font-size: clamp(2rem, 4vw, 2.5rem);
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.cards{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
