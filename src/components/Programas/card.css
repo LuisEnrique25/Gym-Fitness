@@ -30,8 +30,8 @@
     background-image: linear-gradient(
         to bottom,
         transparent 40%,
-        rgba(26, 26, 31, 0.55) 62%, 
-        rgba(20, 20, 24, 0.95) 100%
+        rgba(20, 44, 20, 0.55) 62%, 
+        rgba(10, 26, 16, 0.95) 100%
     );
     grid-area: img;
     order: 2;
@@ -58,4 +58,11 @@
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 1.5px;
+}
+
+
+@media (min-width: 768px){
+    .card{
+        width: 300px;
+    }
 }
