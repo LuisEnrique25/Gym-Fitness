@@ -11,10 +11,8 @@ console.log(programs)
   return (
   <>
     <Navbar/>
-     
     <Hero/>
     <Programas programs={programs}/>
-
   </>
      
 
