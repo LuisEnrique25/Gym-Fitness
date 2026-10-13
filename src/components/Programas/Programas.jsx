@@ -2,7 +2,8 @@ import React from 'react'
 import './programs.css'
 import CardPrograms from './CardPrograms'
 
-function Programas(programs) {
+function Programas({programs}) {
+  console.log(programs)
   return (
     <section id='programs' className='section-programs'>
       <div className="programs-header">
@@ -10,7 +11,9 @@ function Programas(programs) {
         <h2 className='section-tittle'>Construye tu cuerpo</h2>
       </div>
       <div className="cards">
-        <CardPrograms/>
+        {programs.map((program) => (
+          <CardPrograms program={program} key={program.id}/>
+          ))}
       
       </div> 
     </section>
