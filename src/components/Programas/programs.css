@@ -25,8 +25,32 @@
     font-weight: 700;
     letter-spacing: 2px;
 }
-
+ /**----Contenedor de tarjetas**/
 .cards{
     width: 100%;
-
+    padding: 20px;
+    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    gap: 1rem;
+    transition: all 0.2s ease;
 }
+
+@media (min-width: 768px) {
+    .cards{
+        gap: 1.5rem;
+    }
+}
+@media (min-width: 1024px) {
+    .cards{
+        /**
+        flex-wrap: nowrap;
+        */
+        gap: 2rem;
+    }
+}
+
