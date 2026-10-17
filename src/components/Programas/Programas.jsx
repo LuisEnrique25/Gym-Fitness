@@ -3,7 +3,6 @@ import './programs.css'
 import CardPrograms from './CardPrograms'
 
 function Programas({programs}) {
-  console.log(programs)
   return (
     <section id='programs' className='section-programs'>
       <div className="programs-header">
