@@ -6,20 +6,19 @@ import Pricing from './components/Pricing/Pricing'
 import About from './components/About/About'
 import { useState } from 'react'
 import programsDB from './assets/db/programsDB.json';
-import pricesDB from './assets/db/pricesDB.json'
+import plansDB from './assets/db/plansDB.json'
 
 function App() {
   const [programs, setPrograms] = useState(programsDB);
-  const [prices, setPrices] = useState(pricesDB);
-  console.log(programs)
-  console.log(prices)
+  const [plans, setPlans] = useState(plansDB);
+  console.log(plans)
   return (
   <>
     <Navbar/>
     <Hero/>
     <Programas programs={programs}/>
     <About/>
-    <Pricing/>
+    <Pricing plans={plans}/>
   </>
      
 
