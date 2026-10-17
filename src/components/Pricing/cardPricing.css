@@ -1,0 +1,101 @@
+.pricing-card{
+    background: var(--card);
+    max-width: 500px;
+    border: 1px solid var(--border);
+    padding: 1.5rem;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+.featured{
+    background: var(--green);
+}
+.pricing-card:hover{
+    transform: translateY(-6px);
+}
+
+.card-pricing-label{
+    font-size: 0.8rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: var(--muted);
+}
+
+
+.card-price{
+    color: var(--white);
+    font-size: 1.75rem;
+}
+.card-price span{
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.card-price-list{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    margin: 1.25rem 0 1.5rem 0;
+}
+.plan-feature{
+    font-size: 0.82rem;
+    color: var(--white);
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+.plan-feature::before{
+    content: "";
+    width: 6px; height: 6px;
+    border-radius: 50%;
+    background: var(--green);
+    flex-shrink: 0;
+}
+
+/**----btn----------**/
+.card-price-btn{
+    padding: 0.75rem;
+    background: transparent;
+    border: 1px solid var(--border);
+    color: var(--muted);
+    font-weight: 700;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+.card-price-btn:hover{
+    color: var(--white);
+    background: var(--green);
+}
+
+.label-featured{
+    color: var(--white);
+}
+.pricing-card.featured .plan-feature::before{
+    background-color: var(--white);
+}
+.btn-featured{
+    background: var(--white);
+    color: var(--green);
+    border: none;
+}
+.btn-featured:hover{
+    color: var(--green);
+    background-color: rgba(255, 255, 255, 0.8);
+}
+@media (min-width:768px) {
+    .card-price{
+        font-size: 2rem;
+    }
+    .card-price span{
+        font-size: 1.5rem;
+    }
+    .plan-feature{
+        font-size: 1rem;
+    }
+    .card-price-btn{
+        font-size: 1rem;
+    }
+}
