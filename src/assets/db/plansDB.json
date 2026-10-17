@@ -1,0 +1,29 @@
+[
+    {
+        "id":1,
+        "plan-name": "Basico",
+        "precio": 250,
+        "featured": false,
+        "description": ["Acceso a todas las instalacions", 
+                        "Sesion de entrenamiento al mes",
+                        "Acceso a clases grupales"]
+    },   
+    {
+        "id":2,
+        "plan-name": "Estandar",
+        "precio": 550,
+        "featured": true,
+        "description": ["Acceso a todas las instalacions", 
+                        "4 Sesiones de entrenamiento al mes",
+                        "Acceso a clases grupales y talleres especiales"]
+    },   
+    {
+        "id":3,
+        "plan-name": "Premium",
+        "precio": 950,
+        "featured": false,
+        "description": ["Acceso a todas las instalacions", 
+                        "Sesiones ilimitadas de entrenamiento personal",
+                        "Acceso a clases grupales, talleres y eventos exclusivos"]
+    }   
+]
