@@ -1,29 +1,29 @@
 [
     {
         "id":1,
-        "plan-name": "Basico",
-        "precio": 250,
+        "name": "Basico",
+        "price": 250,
         "featured": false,
-        "description": ["Acceso a todas las instalacions", 
-                        "Sesion de entrenamiento al mes",
-                        "Acceso a clases grupales"]
+        "description": [ "Acceso completo a las instalaciones y equipos de entrenamiento del gimnasio.",
+      "Rutina de entrenamiento inicial adaptada a tus objetivos y nivel físico.",
+      "Participación en clases grupales seleccionadas para mantenerte activo y motivado."]
     },   
     {
         "id":2,
-        "plan-name": "Estandar",
-        "precio": 550,
+        "name": "Estandar",
+        "price": 550,
         "featured": true,
-        "description": ["Acceso a todas las instalacions", 
-                        "4 Sesiones de entrenamiento al mes",
-                        "Acceso a clases grupales y talleres especiales"]
+        "description": ["Acceso ilimitado a todas las instalaciones, máquinas y áreas de entrenamiento.",
+      "Sesiones semanales de entrenamiento personal para mejorar tu técnica y rendimiento.",
+      "Acceso a talleres especiales y clases grupales para diversificar tus entrenamientos."]
     },   
     {
         "id":3,
-        "plan-name": "Premium",
-        "precio": 950,
+        "name": "Premium",
+        "price": 950,
         "featured": false,
-        "description": ["Acceso a todas las instalacions", 
-                        "Sesiones ilimitadas de entrenamiento personal",
-                        "Acceso a clases grupales, talleres y eventos exclusivos"]
+        "description": [ "Entrenamiento personal ilimitado para recibir atención individual durante tus sesiones.",
+      "Seguimiento mensual de tu progreso para ajustar rutinas y evaluar tus resultados.",
+      "Acceso exclusivo a eventos, actividades especiales y experiencias VIP del gimnasio."]
     }   
 ]
