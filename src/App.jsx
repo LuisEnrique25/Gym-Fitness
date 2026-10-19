@@ -8,6 +8,7 @@ import { useState } from 'react'
 import programsDB from './assets/db/programsDB.json';
 import plansDB from './assets/db/plansDB.json'
 import Contact from './components/Contact/Contact'
+import Footer from './components/Footer/Footer'
 
 function App() {
   const [programs, setPrograms] = useState(programsDB);
@@ -21,6 +22,7 @@ function App() {
     <About/>
     <Pricing plans={plans}/>
     <Contact/>
+    <Footer/>
   </>
      
 
