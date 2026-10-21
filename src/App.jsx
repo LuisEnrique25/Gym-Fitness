@@ -9,6 +9,7 @@ import programsDB from './assets/db/programsDB.json';
 import plansDB from './assets/db/plansDB.json'
 import Contact from './components/Contact/Contact'
 import Footer from './components/Footer/Footer'
+import ProgressBar from './components/ProgressBar/ProgressBar'
 
 function App() {
   const [programs, setPrograms] = useState(programsDB);
@@ -16,6 +17,7 @@ function App() {
   console.log(plans)
   return (
   <>
+    <ProgressBar/>
     <Navbar/>
     <Hero/>
     <Programas programs={programs}/>
