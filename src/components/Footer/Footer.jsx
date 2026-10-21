@@ -23,8 +23,8 @@ function Footer() {
             <p className='footer-label'>Acceso Rapido</p>
             <ul className='nav-links-footer'>
               <li><a href="#">Inicio</a></li>
-              <li><a href="home">Programas</a></li>
-              <li><a href="#progrms">Conocenos</a></li>
+              <li><a href="#programs">Programas</a></li>
+              <li><a href="#about">Conocenos</a></li>
               <li><a href="#pricing">Planes</a></li>
               <li><a href="#contact">Contacto</a></li>
             </ul>
