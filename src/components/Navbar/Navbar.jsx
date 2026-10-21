@@ -8,7 +8,6 @@ function Navbar() {
   const [activeSection, setActiveSection] = useState('home');
   const toggleMenu = () => {
     setIsShowMenu(!isShowMenu);
-    console.log("render:", isShowMenu);
   }
 
 useEffect(() => {
@@ -35,7 +34,6 @@ useEffect(() => {
   };
 }, []);
 
-console.log(activeSection)
 
   return (
     <header>
