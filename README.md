@@ -40,7 +40,7 @@ The project is organized into reusable React components, with separate styleshee
 
 ## 🌐 Live Demo
 
-[View the live website](YOUR_DEPLOYED_WEBSITE_URL)
+[View the live website](gym-fitnessdemo.netlify.app)
 
 ## 📚 What I Learned
 
