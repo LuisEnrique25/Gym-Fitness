@@ -102,8 +102,7 @@ footer{
     text-decoration: none;
     color: var(--muted);
     font-size: 1rem;
-    font-weight: 600;
-    letter-spacing: 1.5px;
+    letter-spacing: 1.25px;
     transition: color 0.3s ease;
 }
 .nav-links-footer li a:hover{
@@ -130,11 +129,10 @@ footer{
 }
 
 .services-footer-list li a{
-     text-decoration: none;
+    text-decoration: none;
     color: var(--muted);
     font-size: 1rem;
-    font-weight: 600;
-    letter-spacing: 1.5px;
+    letter-spacing: 1.25px;
     transition: color 0.3s ease;
 }
 .services-footer-list li a:hover{
@@ -164,6 +162,7 @@ footer{
 .footer-bottom-text{
     color: var(--muted);
     letter-spacing: 1.25px;
+    text-align: center;
 }
 .footer-bottom-links a{
     text-decoration: none;
@@ -185,12 +184,7 @@ footer{
     .footer-title-label{
         font-size: 1.12rem;
     }
-    .footer-bottom-links{
-        font-size: 1.15rem;
-    }
-    .footer-label{
-        font-size: 1.2rem;
-    }
+
     .social-links-container ul{
         gap: 2.5rem;
     }
