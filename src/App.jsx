@@ -14,7 +14,6 @@ import ProgressBar from './components/ProgressBar/ProgressBar'
 function App() {
   const [programs, setPrograms] = useState(programsDB);
   const [plans, setPlans] = useState(plansDB);
-  console.log(plans)
   return (
   <>
     <ProgressBar/>
