@@ -1,14 +1,41 @@
 
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import './navbar.css'
 
 function Navbar() {
 
   const [isShowMenu, setIsShowMenu] = useState(false);
+  const [activeSection, setActiveSection] = useState('home');
   const toggleMenu = () => {
     setIsShowMenu(!isShowMenu);
     console.log("render:", isShowMenu);
   }
+
+useEffect(() => {
+  const handleScroll = () => {
+    let current = '';
+
+    document.querySelectorAll('section[id]').forEach((sec) => {
+      if (window.scrollY >= sec.offsetTop - 200) {
+        current = sec.id;
+      }
+    });
+
+    if (current) {
+      setActiveSection(current);
+    }
+  };
+
+  window.addEventListener('scroll', handleScroll);
+
+  handleScroll();
+
+  return () => {
+    window.removeEventListener('scroll', handleScroll);
+  };
+}, []);
+
+console.log(activeSection)
 
   return (
     <header>
@@ -24,11 +51,11 @@ function Navbar() {
           </div>
 
           <ul className={`nav-links ${isShowMenu ? 'show' : ''}`} id='navLinks'>
-          <li><a href="#home" >Home</a></li>
-          <li><a href="#programs">Programs</a></li>
-          <li><a href="#about">About Us</a></li>
-          <li><a href="#pricing">Plans</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#home" className={activeSection==="home" ? 'active' : ''} >Home</a></li>
+          <li><a href="#programs" className={activeSection === 'programs' ? 'active' : ''}>Programs</a></li>
+          <li><a href="#about" className={activeSection === 'about' ? 'active' : ''}>About Us</a></li>
+          <li><a href="#pricing" className={activeSection === 'pricing' ? 'active' : ''}>Plans</a></li>
+          <li><a href="#contact" className={activeSection === 'contact' ? 'active' : ''}>Contact</a></li>
           </ul>
       </div>
     </nav>
